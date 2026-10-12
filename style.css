@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px 15px;
+    font-family: Arial, sans-serif;
+    background: #f2f5f9;
+    color: #222;
+}
+
+.container {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    margin: 0 0 8px;
+    text-align: center;
+    color: #173b70;
+}
+
+.subtitle {
+    margin: 0 0 25px;
+    text-align: center;
+    color: #666;
+}
+
+.form-group {
+    margin-bottom: 18px;
+    border: 0;
+    padding: 0;
+    min-width: 0;
+}
+
+.form-group > label,
+legend {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+input:not([type="radio"]):not([type="checkbox"]),
+select,
+textarea {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #cbd2dc;
+    border-radius: 6px;
+    font: inherit;
+    background: white;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #a9c8f5;
+    border-color: #245da8;
+}
+
+.radio-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.radio-options label,
+.agreement label {
+    font-weight: normal;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    accent-color: #245da8;
+}
+
+.error {
+    border: 1px solid #c62828 !important;
+    background-color: #fff5f5 !important;
+}
+
+.error-message {
+    display: block;
+    min-height: 0;
+    margin-top: 5px;
+    color: #c62828;
+    font-size: 13px;
+}
+
+.error-message:not(:empty) {
+    min-height: 16px;
+}
+
+fieldset.error {
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.success-message {
+    margin: 12px 0;
+    color: #176b35;
+    font-weight: bold;
+}
+
+.secondary-button {
+    margin-top: 8px;
+    padding: 7px 12px;
+    border: 1px solid #245da8;
+    border-radius: 5px;
+    color: #245da8;
+    background: white;
+    cursor: pointer;
+}
+
+.secondary-button.active {
+    color: white;
+    background: #245da8;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 22px;
+}
+
+.buttons button {
+    flex: 1;
+    min-width: 150px;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font: inherit;
+    cursor: pointer;
+}
+
+.submit-button {
+    background: #245da8;
+}
+
+.reset-button {
+    background: #626b78;
+}
+
+.buttons button:hover {
+    opacity: 0.9;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+
+    .radio-options {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
